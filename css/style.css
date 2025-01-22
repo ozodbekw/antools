@@ -40,6 +40,7 @@ body {
   flex-direction: column;
   background-color: #1e252b;
   color: #fff;
+  font-family: "Poppins";
 }
 
 a {
@@ -52,6 +53,12 @@ ol {
   list-style: none;
 }
 
+button {
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
   max-width: 1224px;
@@ -59,15 +66,28 @@ ol {
   margin-right: auto;
 }
 
+.btn {
+  background-color: #ff6e30;
+  color: #fdf5ff;
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
 /* Header */
 
 .header {
-  padding: 38px;
+  height: 700px;
+  background-image: url(../images/hero-Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 26px 0;
 }
 
 .header-logo {
@@ -76,11 +96,97 @@ ol {
   gap: 12px;
 }
 
-.nav {
-}
 .nav-list {
   display: flex;
   gap: 40px;
+  padding-left: 60px;
 }
+
 .list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 55%);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 41px;
+}
+
+.login-btn {
+  color: rgba(255, 255, 255, 78%);
+  font-weight: 600;
+  border: 0;
+  background-color: transparent;
+}
+
+/* Hero login */
+
+.hero {
+  margin-top: 80px;
+}
+
+.hero__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 90%);
+  span {
+    color: #ff6e30;
+    margin-left: -15px;
+  }
+}
+
+.hero__describtion {
+  color: rgba(255, 255, 255, 55%);
+  font-weight: normal;
+  font-style: 18px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.hero__search {
+  width: 497.66px;
+  height: 64px;
+  padding: 8px 15px;
+  background-color: #283036;
+  border-radius: 15px;
+  border: 1.5px solid;
+  border-image-source: linear-gradient(
+    90.89deg,
+    rgba(255, 255, 255, 0.1) -1.67%,
+    rgba(255, 255, 255, 0) 103.73%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.hero__search-shape {
+  margin-right: 14px;
+}
+.hero__search-input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  margin-right: 111px;
+  width: 200px;
+  font-family: inherit;
+  &::placeholder {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.hero__socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 110px;
+  img {
+    height: 58px;
+    width: 58px;
+    padding: 11px;
+  }
 }

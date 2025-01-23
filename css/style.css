@@ -75,6 +75,15 @@ button {
   font-weight: 600;
 }
 
+.second-btn {
+  color: rgba(255, 255, 255, 78%);
+  font-weight: 600;
+  border: 0;
+  background-color: transparent;
+  width: 106px;
+  height: 42px;
+}
+
 /* Header */
 
 .header {
@@ -112,13 +121,6 @@ button {
 .header-buttons {
   display: flex;
   gap: 41px;
-}
-
-.login-btn {
-  color: rgba(255, 255, 255, 78%);
-  font-weight: 600;
-  border: 0;
-  background-color: transparent;
 }
 
 /* Hero login */
@@ -165,6 +167,7 @@ button {
 
 .hero__search-shape {
   margin-right: 14px;
+  cursor: pointer;
 }
 .hero__search-input {
   background-color: transparent;
@@ -188,5 +191,117 @@ button {
     height: 58px;
     width: 58px;
     padding: 11px;
+    cursor: pointer;
   }
+}
+
+/* Tools */
+
+.tools-container {
+  margin-top: 200px;
+  text-align: center;
+}
+.tools__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  color: rgba(255, 255, 255);
+  margin-bottom: 25px;
+}
+.tools__describtion {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 55%);
+  margin-bottom: 90px;
+}
+.tools__card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 100px;
+}
+.tools__card {
+  width: 392px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+  border-radius: 15px;
+  padding: 33px;
+}
+
+.tools__card.liked {
+  border: 2px solid transparent;
+  background: url(../images/card-shadow.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.tools__card.liked .tools__card-title {
+  color: rgba(255, 255, 255, 90%);
+}
+
+.tools__card.liked .tools__card-caption {
+  color: rgba(255, 165, 55, 100%);
+}
+
+.tools__card.liked .button-like-bg {
+  fill: #283036;
+}
+
+.tools__card.liked .button-like {
+  fill: #fd3b41;
+  fill-opacity: 1;
+}
+
+.tools__card-top {
+  display: flex;
+  gap: 30px;
+}
+
+.tools__card-img {
+  height: 64px;
+  width: 64px;
+}
+
+.tools__card-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 3px;
+  color: rgba(255, 255, 255, 78%);
+}
+.tools__card-caption {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(255, 165, 55, 55%);
+}
+
+.tools__card-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 78%);
+}
+.tools__card-bottom {
+  display: flex;
+  justify-content: space-between;
+  img,
+  svg {
+    cursor: pointer;
+  }
+}
+.load-more {
+  margin-top: 100px;
+  padding: 17px 38px;
+  color: #ff6e30;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  background-color: #1e252b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }

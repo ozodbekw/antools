@@ -341,3 +341,81 @@ button {
   align-items: center;
   gap: 107px;
 }
+
+/* Newcomer tools */
+
+.newcomer {
+  display: flex;
+  justify-content: space-between;
+}
+.newcomer__text {
+  margin-top: 20px;
+}
+.newcomer__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+}
+.newcomer__description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 60px;
+  width: 427px;
+}
+
+.newcomer__card-wrapper {
+  width: 600px;
+  height: 638px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.newcomer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.newcomer__card-top {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.newcomer__card-img {
+}
+.newcomer__card-title {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.newcomer__card-caption {
+  color: rgba(255, 165, 55, 0.55);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.newcomer__card-description {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 245px;
+}
+.newcomer__card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.newcomer__card-buttons {
+  svg,
+  img {
+    cursor: pointer;
+  }
+}
+.button-like-bg {
+}
+.button-like {
+}

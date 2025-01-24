@@ -59,6 +59,14 @@ button {
   cursor: pointer;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 .container {
   width: 100%;
   max-width: 1224px;
@@ -198,7 +206,6 @@ button {
 /* Tools */
 
 .tools-container {
-  margin-top: 200px;
   text-align: center;
 }
 .tools__title {
@@ -304,4 +311,33 @@ button {
   background-color: #1e252b;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
+  transition: 0.3s;
+}
+
+.load-more:hover {
+  background-color: #ff6e30;
+  color: #1e252b;
+}
+
+/* Logos */
+.logos {
+  padding: 55px 83px;
+  border-radius: 25px;
+  text-align: center;
+  border: 2px solid #232a30;
+  background-image: url(../images/logos-shape.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.logos__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 80%);
+}
+.logos__img {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  gap: 107px;
 }

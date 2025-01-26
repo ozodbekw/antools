@@ -368,8 +368,6 @@ button {
 }
 
 .newcomer__card-wrapper {
-  width: 600px;
-  height: 638px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -378,13 +376,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  height: 288px;
 }
 .newcomer__card-top {
   display: flex;
   gap: 30px;
   align-items: center;
-}
-.newcomer__card-img {
 }
 .newcomer__card-title {
   color: rgba(255, 255, 255, 0.78);
@@ -415,7 +412,103 @@ button {
     cursor: pointer;
   }
 }
-.button-like-bg {
+
+/* User corousel */
+
+.user-carousel {
+  height: 100%;
+  width: 100%;
 }
-.button-like {
+.user-carousel-container {
+  display: flex;
+  justify-content: space-around;
+}
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-carousel-image {
+  background-image: url(../images/circle.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.user-carousel-text {
+  width: 500px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  background-image: url(../images/“.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-top: 50px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
+
+.corousel-sliders {
+  margin-top: 100px;
+  width: 166px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 18px;
+  span {
+    width: 44px;
+    height: 6px;
+    background-color: rgba(40, 48, 54, 1);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  span:nth-child(2) {
+    background-color: rgba(255, 110, 48, 1);
+  }
+}
+
+/* Subscribe  */
+
+.subscribe {
+  text-align: center;
+}
+.subscribe__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.subscribe__describtion {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 100px;
+}
+.subscribe__search {
+  width: 549px;
+  height: 64px;
+  border-radius: 15px;
+  border: 1.5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(40, 48, 54, 1);
+  padding-left: 24px;
+  padding-right: 12px;
+}
+.subscribe__search-input {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: inherit;
+  font-family: inherit;
 }

@@ -126,6 +126,10 @@ button {
   color: rgba(255, 255, 255, 55%);
 }
 
+.list-item:hover {
+  color: rgba(255, 255, 255, 78%);
+}
+
 .header-buttons {
   display: flex;
   gap: 41px;
@@ -511,4 +515,55 @@ button {
   outline: 0;
   color: inherit;
   font-family: inherit;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 70px;
+  padding-bottom: 98px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+.footer-container {
+  display: flex;
+  gap: 156px;
+}
+
+.footer-caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 25px;
+}
+.footer__description {
+  margin-top: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.footer__right {
+  display: flex;
+  gap: 115px;
+}
+
+.footer__right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+.footer__right ul li:first-child {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
 }

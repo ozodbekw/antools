@@ -6,6 +6,7 @@
     <title>Antools</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header  -->
@@ -18,7 +19,11 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="list-item"><a href="#">Home</a></li>
-            <li class="list-item"><a href="#">Categories</a></li>
+            <li class="list-item">
+              <a href="#"
+                >Categories <img src="./images/arrow-down.svg" alt=""
+              /></a>
+            </li>
             <li class="list-item"><a href="#">My Collections</a></li>
             <li class="list-item"><a href="#">Blog</a></li>
           </ul>
@@ -64,14 +69,14 @@
 
     <!-- Main  -->
     <main class="main container">
-      <section class="tools-container">
+      <section data-aos="fade-in" class="tools-container">
         <h1 class="tools__title">Most Popular Tools</h1>
         <p class="tools__describtion">
           Tools for the best Designers and Developers <br />
           most popularly used in the world
         </p>
         <div class="tools__card-wrapper">
-          <div class="tools__card">
+          <div class="tools__card" data-aos="fade-up">
             <div class="tools__card-top">
               <img
                 class="tools__card-img"
@@ -113,7 +118,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="tools__card liked">
+          <div class="tools__card liked" data-aos="fade-up">
             <div class="tools__card-top">
               <img
                 class="tools__card-img"
@@ -155,7 +160,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="tools__card">
+          <div class="tools__card" data-aos="fade-up">
             <div class="tools__card-top">
               <img
                 class="tools__card-img"
@@ -197,7 +202,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="tools__card">
+          <div class="tools__card" data-aos="fade-up">
             <div class="tools__card-top">
               <img
                 class="tools__card-img"
@@ -239,7 +244,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="tools__card">
+          <div class="tools__card" data-aos="fade-up">
             <div class="tools__card-top">
               <img
                 class="tools__card-img"
@@ -281,7 +286,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="tools__card">
+          <div class="tools__card" data-aos="fade-up">
             <div class="tools__card-top">
               <img
                 class="tools__card-img"
@@ -326,7 +331,7 @@
         </div>
         <button class="load-more">Load more</button>
       </section>
-      <section class="logos">
+      <section data-aos="fade-in" class="logos">
         <h2 class="logos__title">Trusted more than 150+ brand</h2>
         <div class="logos__img">
           <img src="./images/logos_microsoft.svg" alt="" />
@@ -337,7 +342,7 @@
       </section>
 
       <!-- Newcomer Tools -->
-      <section class="newcomer">
+      <section data-aos="fade-in" class="newcomer">
         <div class="newcomer__text">
           <h2 class="newcomer__title">Newcomer Tools</h2>
           <p class="newcomer__description">
@@ -347,7 +352,7 @@
           <button class="btn">Explore More</button>
         </div>
         <div class="newcomer__card-wrapper">
-          <div class="newcomer__card">
+          <div class="newcomer__card" data-aos="fade-up">
             <div class="newcomer__card-top">
               <img
                 class="newcomer__card-img"
@@ -389,7 +394,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="newcomer__card">
+          <div class="newcomer__card" data-aos="fade-up">
             <div class="newcomer__card-top">
               <img
                 class="newcomer__card-img"
@@ -431,7 +436,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="newcomer__card">
+          <div class="newcomer__card" data-aos="fade-up">
             <div class="newcomer__card-top">
               <img
                 class="newcomer__card-img"
@@ -473,7 +478,7 @@
               <button class="second-btn">Visit</button>
             </div>
           </div>
-          <div class="newcomer__card">
+          <div class="newcomer__card" data-aos="fade-up">
             <div class="newcomer__card-top">
               <img
                 class="newcomer__card-img"
@@ -519,7 +524,7 @@
       </section>
 
       <!-- User Corusel -->
-      <section class="user-carousel">
+      <section data-aos="fade-in" class="user-carousel">
         <div class="user-carousel-container">
           <img
             class="arrow-left"
@@ -555,7 +560,7 @@
       </section>
 
       <!-- Become a contributor? -->
-      <section class="subscribe">
+      <section data-aos="fade-in" class="subscribe">
         <h2 class="subscribe__title">Become a contributor?</h2>
         <p class="subscribe__describtion">
           Join us and get tips & tricks to become a great Designer and Developer
@@ -573,7 +578,46 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="sooter-container container">Footer</div>
+      <div class="footer-container container">
+        <div class="footer__left">
+          <a class="header-logo" href="index.html">
+            <img src="./images/logo.svg" alt="Logo" />
+            <h2>antools.</h2>
+          </a>
+          <h3 class="footer-caption">Copyright 2025. Antools</h3>
+          <p class="footer__description">
+            Antool is a web collection of <br />
+            information on paid or free Design <br />
+            and Development tools
+          </p>
+        </div>
+        <div class="footer__right">
+          <ul>
+            <li>Contact Us</li>
+            <li><a href="tel:+621987463">+621987463</a></li>
+            <li>M Building, No.10 A</li>
+            <li>
+              <a href="mailto:antools@awesome.com">antools@awesome.com</a>
+            </li>
+          </ul>
+          <ul>
+            <li>Categories</li>
+            <li>Design</li>
+            <li>Development</li>
+          </ul>
+          <ul>
+            <li>Company Info</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
